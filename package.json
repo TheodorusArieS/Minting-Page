@@ -1,0 +1,26 @@
+{
+  "name": "hard-hat",
+  "version": "1.0.0",
+  "description": "My NFT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "npx hardhat --network ropsten run scripts/deploy.js",
+    "deploy-harmony-test":"npx hardhat --network testnet run scripts/deploy.js",
+    "mint-harmony":"node ./scripts/mint_nft_harmony.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.4",
+    "ethers": "^5.5.3",
+    "hardhat": "^2.8.2"
+  },
+  "dependencies": {
+    "@alch/alchemy-web3": "^1.1.9",
+    "@openzeppelin/contracts": "^4.4.2",
+    "bn.js": "^5.2.0",
+    "dotenv": "^14.2.0",
+    "web3": "^1.7.0"
+  }
+}
